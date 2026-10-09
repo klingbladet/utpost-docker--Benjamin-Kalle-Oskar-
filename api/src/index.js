@@ -13,7 +13,7 @@ const app = express();
 app.use(cors());
 app.use(express.json({ limit: '50mb' }));
 
-// Svarar med om databaserna nås. Compose och molnet frågar hit för att veta om API:et lever.
+// Svarar med om databaserna nås. Compose och molnet frågar hit för att veta om API:et lever. Test
 app.get('/api/health', async (req, res) => {
   const check = async (fn) => {
     try {
